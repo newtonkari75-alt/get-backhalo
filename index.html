@@ -13,9 +13,9 @@
     <link rel="alternate" hreflang="x-default" href="https://thebest.foampillow.shop/">
     
     <!-- 2. Geo-Targeting Metadata -->
-    <meta name="geo.region" content="US-NY" /> 
-    <meta name="geo.position" content="40.7128;-74.0060" />
-    <meta name="ICBM" content="40.7128, -74.0060" />
+    <meta name="geo.region" content="GB" /> 
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     
     <!-- 3. Safe Metadata (No Cure Claims) -->
     <title data-translate="meta_title">Black Halo Max 2026 | The Best Foam Pillow - Comfort & Support</title>
@@ -27,11 +27,11 @@
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://thebest.foampillow.shop/">
     <meta property="og:title" content="The Best Foam Pillow - Black Halo Max (70% OFF)">
-    <meta property="og:description" content="Wake up refreshed. The ergonomic pillow that supports your spine. Fast shipping to US and AU.">
+    <meta property="og:description" content="Wake up refreshed. The ergonomic pillow that supports your spine. Fast shipping to UK and AU.">
     <meta property="og:image" content="images/imgi_23_product1.png">
     <meta property="og:site_name" content="The Best Foam Pillow Shop">
     <meta property="og:price:amount" content="39.00">
-    <meta property="og:price:currency" content="USD">
+    <meta property="og:price:currency" content="GBP">
 
     <!-- 5. Schema.org (JSON-LD) -->
     <script type="application/ld+json">
@@ -60,7 +60,7 @@
         "offers": {
           "@type": "Offer",
           "url": "https://thebest.foampillow.shop/",
-          "priceCurrency": "USD",
+          "priceCurrency": "GBP",
           "price": "39.00",
           "priceValidUntil": "2026-12-31",
           "itemCondition": "https://schema.org/NewCondition",
@@ -74,7 +74,7 @@
             "shippingRate": {
               "@type": "MonetaryAmount",
               "value": "0",
-              "currency": "USD"
+              "currency": "GBP"
             },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
@@ -92,7 +92,7 @@
               }
             },
             "shippingDestination": [
-              { "@type": "DefinedRegion", "addressCountry": "US" },
+              { "@type": "DefinedRegion", "addressCountry": "GB" },
               { "@type": "DefinedRegion", "addressCountry": "AU" }
             ]
           }
@@ -112,10 +112,10 @@
           },
           {
             "@type": "Question",
-            "name": "Do you ship internationally?",
+            "name": "Do you ship to UK and Australia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we offer fast, tracked shipping to the USA and Australia."
+              "text": "Yes, we offer fast, tracked shipping to the United Kingdom and Australia."
             }
           }
         ]
@@ -164,7 +164,6 @@
             color: #f59e0b; /* Tailwind amber-500 */
         }
         .hero-section-bg {
-            /* Branco e Cinza com transparência sobre a imagem */
             background-image: linear-gradient(rgba(243, 243, 243, 0.9), rgba(255, 255, 255, 0.85)), url('images/imgi_7_backmat8.png');
             background-size: cover;
             background-position: center;
@@ -183,12 +182,12 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Glassmorphism Utility adaptado para paleta cinza */
+        /* Glassmorphism Utility */
         .glass-panel {
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(209, 213, 219, 0.3); /* gray-300 opacity */
+            border: 1px solid rgba(209, 213, 219, 0.3);
         }
     </style>
 </head>
@@ -209,8 +208,13 @@
             <div class="container mx-auto px-4 sm:px-6 py-10 md:py-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center">
                     
-                    <!-- Text Content (LEFT COLUMN) -->
-                    <div class="text-center md:text-left md:col-start-1 md:row-start-1 reveal flex flex-col items-center md:items-start">
+                    <!-- Desktop Image (ESQUERDA NO DESKTOP) -->
+                    <div class="hidden md:flex justify-center items-center md:col-start-1 md:row-start-1 md:row-span-2 h-full reveal">
+                        <img src="images/imgi_23_product1.png" width="500" height="500" alt="Black Halo Max Ergonomic Memory Foam Pillow" class="w-full max-w-lg h-auto transform transition hover:scale-105 duration-500 drop-shadow-xl" onerror="this.src='https://placehold.co/500x500?text=Black+Halo+Max'">
+                    </div>
+
+                    <!-- Text Content (DIREITA NO DESKTOP) -->
+                    <div class="text-center md:text-left md:col-start-2 md:row-start-1 reveal flex flex-col items-center md:items-start">
                         
                         <!-- Badge -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
@@ -232,11 +236,16 @@
                         </h1>
                         
                         <!-- Description -->
-                        <p class="text-lg md:text-xl mb-8 text-gray-800 leading-relaxed max-w-lg font-medium opacity-90" data-translate="hero_desc">
+                        <p class="text-lg md:text-xl mb-4 text-gray-800 leading-relaxed max-w-lg font-medium opacity-90" data-translate="hero_desc">
                             Advanced memory foam adapts to your shape, designed to help reduce neck tension and promote comfort.
                         </p>
+
+                        <!-- Added Copy Text -->
+                        <p class="text-base md:text-lg mb-8 text-gray-700 leading-relaxed max-w-lg" data-translate="hero_copy_new">
+                            O Black Halo Max proporciona uma sensação aconchegante e macia, com um calor relaxante e controles de ajuste simples, bastando um toque. Use-o no sofá, na cama ou na sua mesa para relaxar em minutos — sem necessidade de configurações complicadas.
+                        </p>
                         
-                        <!-- Mobile Image (Optimized) -->
+                        <!-- Mobile Image (Visível apenas no mobile) -->
                         <div class="my-4 flex justify-center items-center md:hidden reveal w-full">
                             <img src="images/imgi_23_product1.png" width="500" height="500" alt="Black Halo Max Ergonomic Pillow" class="w-full max-w-sm h-auto object-contain drop-shadow-md" onerror="this.src='https://placehold.co/500x500?text=Black+Halo+MAX'">
                         </div>
@@ -248,37 +257,38 @@
                                     <div class="bg-blue-600 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_1">Helps reduce tossing & turning</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_1">Design de suporte acolchoado</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="bg-blue-600 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_2">Promotes better sleep posture</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_2">Níveis de calor ajustáveis</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="bg-blue-600 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_3">60-Night "Better Sleep" Guarantee</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_3">Conforto silencioso</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-blue-600 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_4">Bateria de longa duração</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Desktop Image -->
-                    <div class="hidden md:flex justify-center items-center md:col-start-2 md:row-start-1 md:row-span-2 h-full reveal">
-                        <img src="images/imgi_23_product1.png" width="500" height="500" alt="Black Halo Max Ergonomic Memory Foam Pillow" class="w-full max-w-lg h-auto transform transition hover:scale-105 duration-500 drop-shadow-xl" onerror="this.src='https://placehold.co/500x500?text=Black+Halo+Max'">
-                    </div>
-
-                    <!-- Buttons -->
-                    <div class="flex flex-col gap-3 mt-2 md:mt-4 md:col-start-1 md:row-start-2 w-full max-w-md reveal">
-                        <a href="https://mwebora.com/11164/1907/163/?country=US" rel="noopener noreferrer" class="group flex items-center justify-center bg-[#0073AD] hover:bg-[#005d8c] text-white text-lg font-bold px-8 py-4 rounded-full flex-1 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-center relative overflow-hidden">
-                            <span class="relative z-10" data-translate="btn_usa">Estados Unidos</span>
+                    <!-- Buttons (DIREITA NO DESKTOP) -->
+                    <div class="flex flex-col gap-3 mt-2 md:mt-4 md:col-start-2 md:row-start-2 w-full max-w-md reveal">
+                        <a href="https://www.fasttrack37.com/PM7HK3TH/2TCQ7GJM/" rel="noopener noreferrer" class="group flex items-center justify-center bg-[#0073AD] hover:bg-[#005d8c] text-white text-lg font-bold px-8 py-4 rounded-full flex-1 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-center relative overflow-hidden">
+                            <span class="relative z-10" data-translate="btn_uk">Reino Unido</span>
                             <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                         </a>
                         
-                        <a href="https://mwebora.com/11164/1907/163/?country=AU" rel="noopener noreferrer" class="group flex items-center justify-center bg-[#0073AD] hover:bg-[#005d8c] text-white text-lg font-bold px-8 py-4 rounded-full flex-1 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-center relative overflow-hidden">
+                        <a href="https://www.fasttrack37.com/PM7HK3TH/2TCRLC98/" rel="noopener noreferrer" class="group flex items-center justify-center bg-[#0073AD] hover:bg-[#005d8c] text-white text-lg font-bold px-8 py-4 rounded-full flex-1 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-center relative overflow-hidden">
                             <span class="relative z-10" data-translate="btn_au">Australia</span>
                             <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                         </a>
@@ -313,10 +323,10 @@
                     This site is not a part of the Google™ website or Google Inc. Additionally, This site is NOT endorsed by Google™ in any way. Google™ is a trademark of Google Inc.
                 </p>
                 <p data-translate="disclaimer_2">
-                    This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+                    This site is not a part of the Facebook website or Facebook Inc.
                 </p>
                 <p data-translate="disclaimer_3">
-                    Results may vary. All information on this website is for informational purposes only and does not replace medical advice or treatment. Always consult your doctor or other qualified health provider with any questions regarding a medical condition.
+                    Results may vary. All information on this website is for informational purposes only and does not replace medical advice or treatment.
                 </p>
                 <p class="mt-2 text-gray-600">
                     *The statements made on this website have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
@@ -331,7 +341,6 @@
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                 <div class="relative transform overflow-hidden rounded-xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl max-h-[90vh] flex flex-col border border-gray-200">
-                    
                     <div class="bg-white px-4 py-4 sm:px-6 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20 shadow-sm">
                         <h3 class="text-lg font-bold leading-6 text-gray-900" id="modal-title" data-translate="modal_title">Legal Information</h3>
                         <button type="button" onclick="closeModal()" class="rounded-full p-1 bg-gray-100 text-gray-400 hover:text-gray-600 hover:bg-gray-200 focus:outline-none transition-colors">
@@ -341,29 +350,13 @@
                             </svg>
                         </button>
                     </div>
-
                     <div class="bg-white px-6 pb-8 pt-6 overflow-y-auto">
                         <div class="prose prose-sm max-w-none text-gray-600">
                             <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b">Terms of Service</h2>
                             <p class="mb-4"><strong>Agreement between User and Black Halo Max Official Shop.</strong></p>
                             <p>Welcome to our site. By accessing this website, you agree to be bound by these terms and conditions.</p>
-                            
-                            <h3 class="font-bold text-gray-900 mt-6 mb-2">1. Return Policy</h3>
-                            <p>We offer a 30-day return policy for unused items in original packaging. Contact support to initiate a return.</p>
-
-                            <h3 class="font-bold text-gray-900 mt-6 mb-2">2. Shipping</h3>
-                            <p>Standard shipping takes 3-5 business days. International shipping may take longer.</p>
-
-                            <h3 class="font-bold text-gray-900 mt-6 mb-2">Contact</h3>
-                            <p>Support: support@blackhalomax.com | Convenity, UAB</p>
-                            
-                            <hr class="my-8 border-gray-200">
-                            
-                            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b">Privacy Policy</h2>
-                            <p>We collect basic information (name, address, email) solely to fulfill your order. We do not sell your data to third parties.</p>
                         </div>
                     </div>
-
                     <div class="bg-gray-50 px-4 py-4 sm:flex sm:flex-row-reverse sm:px-6 sticky bottom-0 z-20 border-t border-gray-100">
                         <button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-lg border border-transparent bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 sm:ml-3 sm:w-auto sm:text-sm transition-all" data-translate="btn_close">Close</button>
                     </div>
@@ -379,17 +372,19 @@
                 'discount_badge': 'ÚLTIMA CHANCE: 70% OFF',
                 'hero_title': 'Apoie Sua Coluna <br class="hidden sm:block">& Durma Melhor',
                 'hero_desc': 'Espuma viscoelástica avançada que se adapta ao seu corpo, projetada para ajudar a reduzir a tensão no pescoço e a rigidez matinal.',
-                'bullet_1': 'Ajuda a reduzir o vira-vira na cama',
-                'bullet_2': 'Promove uma melhor postura de sono',
-                'bullet_3': 'Garantia de "Melhor Sono" por 60 noites',
-                'btn_usa': 'Estados Unidos',
+                'hero_copy_new': 'O Black Halo Max proporciona uma sensação aconchegante e macia, com um calor relaxante e controles de ajuste simples, bastando um toque. Use-o no sofá, na cama ou na sua mesa para relaxar em minutos — sem necessidade de configurações complicadas.',
+                'bullet_1': 'Design de suporte acolchoado',
+                'bullet_2': 'Níveis de calor ajustáveis',
+                'bullet_3': 'Conforto silencioso',
+                'bullet_4': 'Bateria de longa duração',
+                'btn_uk': 'Reino Unido',
                 'btn_au': 'Australia',
                 'footer_copy': '&copy; 2026 Black Halo Max. Todos os direitos reservados.',
                 'footer_auth': 'Revendedor Global Autorizado',
                 'link_privacy': 'Política de Privacidade',
                 'link_terms': 'Termos de Serviço',
                 'link_contact': 'Fale Conosco',
-                'disclaimer_1': 'Este site não faz parte do site do Google™ ou da Google Inc. Além disso, este site NÃO é endossado pelo Google™ de forma alguma.',
+                'disclaimer_1': 'Este site não faz parte do site do Google™ ou da Google Inc. Além disso, este site NÃO é endossorsado pelo Google™ de forma alguma.',
                 'disclaimer_2': 'Este site não faz parte do site do Facebook ou da Facebook Inc.',
                 'disclaimer_3': 'Os resultados podem variar.',
                 'modal_title': 'Informação Legal',
@@ -400,10 +395,12 @@
                 'discount_badge': 'LAST CHANCE: 70% OFF',
                 'hero_title': 'Support Your Spine <br class="hidden sm:block">& Sleep Deeper',
                 'hero_desc': 'Advanced memory foam adapts to your shape, designed to help reduce neck tension and promote comfort.',
-                'bullet_1': 'Helps reduce tossing & turning',
-                'bullet_2': 'Promotes better sleep posture',
-                'bullet_3': '60-Night "Better Sleep" Guarantee',
-                'btn_usa': 'United States',
+                'hero_copy_new': 'The Black Halo Max provides a cozy and soft feel, with relaxing warmth and simple one-touch controls. Use it on the sofa, in bed, or at your desk to relax in minutes — no complicated settings required.',
+                'bullet_1': 'Padded support design',
+                'bullet_2': 'Adjustable heat levels',
+                'bullet_3': 'Silent comfort',
+                'bullet_4': 'Long-lasting battery',
+                'btn_uk': 'United Kingdom',
                 'btn_au': 'Australia',
                 'footer_copy': '&copy; 2026 Black Halo Max. All rights reserved.',
                 'footer_auth': 'Authorized Global Retailer',
