@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Script de rastreamento solicitado -->
+    <script src="https://api.stuart-little.com/code/8300-2f3f9298-ee6e-43ce-90f1-b6f0047048cc"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -81,6 +84,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Favicon Updated to Product Photo -->
+    <link rel="icon" href="images/imgi_23_product1.png" type="image/png">
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -118,7 +124,8 @@
     <header class="sticky top-0 bg-white z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-center items-center p-4">
             <div>
-                <img src="images/imgi_2_bhm-logo-color-black-2x.png" width="160" height="40" alt="Black Halo Max Official Store" class="h-10 w-auto transition-opacity hover:opacity-80" onerror="this.src='https://placehold.co/160x40?text=BLACK+HALO+MAX'">
+                <!-- Logo dimension reduced by half from 160x40/h-10 to 80x20/h-5 -->
+                <img src="images/imgi_2_bhm-logo-color-black-2x.png" width="80" height="20" alt="Black Halo Max Official Store" class="h-5 w-auto transition-opacity hover:opacity-80" onerror="this.src='https://placehold.co/80x20?text=BHM'">
             </div>
         </div>
     </header>
@@ -270,7 +277,7 @@
     <!-- AUTO-TRANSLATION SCRIPT -->
     <script>
         const translations = {
-            'pt': {
+            'en': {
                 'discount_badge': 'LAST CHANCE: 70% OFF',
                 'hero_title': 'New & Improved 2026 Model <br class="hidden sm:block"> Black Halo Max',
                 'hero_copy_new': 'The Black Halo Max provides a cozy and soft feel, with relaxing warmth and simple one-touch controls. Use it on the sofa, in bed, or at your desk to relax in minutes — no complicated settings required.',
@@ -291,38 +298,12 @@
                 'modal_title': 'Legal Information',
                 'btn_close': 'Close',
                 'meta_title': 'Black Halo Max 2026 | New & Improved Model - Comfort & Support'
-            },
-            'en': {
-                'discount_badge': 'LAST CHANCE: 70% OFF',
-                'hero_title': 'New & Improved 2026 Model <br class="hidden sm:block"> Black Halo Max',
-                'hero_copy_new': 'The Black Halo Max provides a cozy and soft feel, with relaxing warmth and simple one-touch controls. Use it on the sofa, in bed, or at your desk to relax in minutes — no complicated settings required.',
-                'bullet_1': 'Padded support design',
-                'bullet_2': 'Adjustable heat levels',
-                'bullet_3': 'Silent comfort',
-                'bullet_4': 'Long-lasting battery life',
-                'btn_uk': 'United Kingdom',
-                'btn_au': 'Australia',
-                'footer_copy': '&copy; 2026 Black Halo Max. All rights reserved.',
-                'footer_auth': 'Authorized Global Retailer',
-                'link_privacy': 'Privacy Policy',
-                'link_terms': 'Terms of Service',
-                'link_contact': 'Contact Us',
-                'disclaimer_1': 'This site is not a part of Google™.',
-                'disclaimer_2': 'This site is not a part of Facebook.',
-                'disclaimer_3': 'Results may vary.',
-                'modal_title': 'Legal Information',
-                'btn_close': 'Close',
-                'meta_title': 'Black Halo Max 2026 | New & Improved Model - Comfort & Support'
             }
         };
 
         document.addEventListener('DOMContentLoaded', () => {
-            const userLang = navigator.language || navigator.userLanguage; 
-            let targetLang = 'en'; // Default to English as per request
-            const langCode = userLang.substring(0, 2).toLowerCase();
-            
-            // Apply English for everything as requested
-            targetLang = 'en';
+            // Force target language to English as requested
+            const targetLang = 'en';
 
             if (translations[targetLang]) {
                 const elements = document.querySelectorAll('[data-translate]');
